@@ -1,0 +1,50 @@
+#head{
+    color: black;
+    text-align: center;
+}
+
+.course{
+    margin-top: 30px;
+}
+.row{
+    display: flex;
+}
+.column{
+    border: 2px solid black;
+    margin: 50px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(rgb(216, 192, 55),rgb(32, 93, 151))
+}
+.Uni{
+    border: 1px solid rgb(151, 133, 168);
+    margin: 60px;
+    margin-right: 97px;
+}
+h3{
+    text-align: center;
+}
+img{
+    height: 200px;
+    width: 300px;
+}
+h1{
+    text-align: center;
+}
+button{
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 30px;
+    color: black;
+    background-color: gray;
+}
+button:hover{
+    background-color: red;
+}
+.btn{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}

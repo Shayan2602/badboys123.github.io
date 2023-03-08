@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    background-color: black;
+}
+a{
+    color: cornsilk;
+    font-size: 25px;
+    text-decoration: none;
+}
+li{
+    float: left;
+    margin: 20px;
+}
+ul{
+    overflow: auto;
+}
+.Header{
+    background-image: url(ring.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{ text-align: center;
+color: white;
+padding-top: 300;
+font-size: 50px;
+}
+p{
+    
+}

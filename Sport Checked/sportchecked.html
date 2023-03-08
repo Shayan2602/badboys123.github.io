@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form>
+
+        <h3>(Select Your Favorite Sports)</h3>
+        <label><input type="checkbox" value="Football" name="Sport">Football</label>
+        <label><input type="checkbox" value="Baseball" name="Sport">Baseball</label>
+        <label><input type="checkbox" value="Cricket" name="Sport">Cricket</label>
+        <label><input type="checkbox" value="Boxing" name="Sport">Boxing</label>
+        <label><input type="checkbox" value="Racing" name="Sport">Racing</label>
+        <label><input type="checkbox" value="Swimming" name="Sport">Swimming</label>
+        <hr>
+        <button type="button">Get Values</button>
+    </form>
+
+    <script>
+        $(document).ready(function() {
+            $("button").click(function(){
+                var favorite = [];
+                $.each($("input[name='Sport']:checked"), function(){
+                    favorite.push($(this).val());
+                });
+                alert("My Favorite Sports Are: " + favorite.join(", "));
+            });
+        });
+    </script>
+    
+</body>
+</html>

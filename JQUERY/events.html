@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script
+  src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
+</head>
+<style>
+    .container{
+        background-color: pink;
+        height: 200px;
+    }
+</style>
+<body>
+  <div class="container">
+      <h1>Events</h1>
+  </div>
+  <script>
+      $(document).ready(function(){
+          $(".container").click(function(){
+    $(this).css("backgroundColor","orange")
+
+          })
+          $(".container").contextmenu(function(){
+        $(this).css("backgroundColor","grey")      
+          }) 
+          $(".container").dblclick(function(){
+        $(this).css("backgroundColor","green")      
+          })    
+          $(".container").mouseenter(function(){
+        $(this).css("backgroundColor","red")      
+          })
+          $(".container").mouseout(function(){
+        $(this).css("backgroundColor","purple")      
+          })
+          $("body").keypress(function(){
+        $(this).css("backgroundColor","pink")    
+          })
+          $("body").keyup(function(){
+        $(this).css("backgroundColor","yellow")    
+          })
+          $("body").keydown(function(){
+        $(this).css("backgroundColor","black")    
+          })
+      })
+  </script>
+</body>
+</html>

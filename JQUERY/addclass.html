@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+</head>
+<style>
+.box{
+    border: 4x solid black;
+    background-color: pink;
+}    
+</style>
+<body>
+    <input type="text" id="text">
+  Name: <input type="name" id="name">
+  Email: <input type="email" id="em">
+  Password: <input type="password" id="pwd">
+
+  <button>Submit</button>
+  <script>
+$(document).ready(function(){
+$("button").click(function(){
+
+
+   if($("#text").val()==""){
+$("#text").addClass("box")
+alert("Please Fill This Feild !") 
+
+
+}
+else{
+
+    $("#text").removeClass("box")
+}
+if($("#name").val()==""){
+$("#name").addClass("box") 
+
+
+}
+else{
+
+    $("#name").removeClass("box")
+}  
+if($("#em").val()==""){
+$("#em").addClass("box")
+
+
+}
+else{
+
+    $("#em").removeClass("box")
+}  
+if($("#pwd").val()==""){
+$("#pwd").addClass("box") 
+
+
+}
+else{
+
+    $("#pwd").removeClass("box")
+}    
+
+})
+
+
+})      
+  </script>  
+</body>
+</html>

@@ -1,0 +1,126 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    background-color: black;
+}
+ul{
+    overflow: auto;
+    list-style: none;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+li{
+    margin: 25px;
+    float: left;
+}
+a{
+    text-decoration: none;
+    margin: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+a:hover{
+    color: orange;
+}
+.coursol img{
+    margin-top: 40px;
+    height: 400px;
+    width: 500px;   
+    border-radius: 20px orange;
+    border: 10px solid orange; 
+    margin-left: 50px;
+}
+h1{
+    margin-left: 600px ;
+    margin-top: -410px
+}
+.p{
+    margin-left: 600px;
+    margin-top: 20px;
+}
+.coursol1 img{
+    height: 100px;
+    width: 100px;
+    margin-left: 600px;
+    margin-top: 70px;
+    border: 2px solid black; 
+}
+h2{
+    margin-left: 600px;
+    margin-top: 20px;
+}
+.coursol2 img{
+    height: 100px;
+    width: 100px;
+    margin-left: 600px;
+    margin-top: 30px;
+}
+.coursol2{
+    margin-left: 400px;
+    margin-top: -235px;
+}
+.cont{
+    background-color: black;
+    border-radius: 20px;
+    height: 200px;
+    text-align: center;
+    border-radius: 20px orange;
+    border: 10px solid orange; 
+}
+.row{
+    margin-left: 150px;
+    display: grid;
+    margin-top: 70px;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 40px;
+}
+#btn{
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+}
+#btn:hover{
+    background-color: orange;
+}
+h3{
+    color: white;
+    margin-top: 40px;
+}
+h3:hover{
+    color: orange;
+}
+.p3{
+    color: white;
+    margin-top: 10px;
+}
+.foot{
+    margin-top: -300px;
+    background: linear-gradient(rgba(177, 172, 172,0.7),rgba(120, 120, 163,0.7)), url(imgg5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+h4{
+    margin-left: 500px;
+    font-size: 40px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.btn{
+    margin-left: 750px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 15px; 
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: orange;
+    color: black;
+    border: 1px solid black;
+}

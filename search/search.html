@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>web.com</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <input type="text" id="name" placeholder="Search...">
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="mytable">
+              <tr>
+                  <td>Mohammed</td>
+                  <td>Ali</td>
+                  <td>ali@gmail.com</td>
+              </tr>
+
+              <tr>
+                <td>Owais</td>
+                <td>Naseem</td>
+                <td>owais@gmail.com</td>
+            </tr>
+
+            <tr>
+                <td>Shayan</td>
+                <td>Ali</td>
+                <td>shayan@gmail.com</td>
+            </tr>
+
+            <tr>
+                <td>Mohammad</td>
+                <td>Hasan</td>
+                <td>hasan@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script>
+  $(document).ready(function(){
+      $('#name').on('keyup', function(){
+          var value=$(this).val().toLowerCase();
+          $('#mytable tr').filter(function(){
+              $(this).toggle($(this).text().toLocaleLowerCase().
+              indexOf(value)>-1);
+              console.log('#name');
+          })
+      })
+  })
+</script>
+</html>
